@@ -8,13 +8,25 @@ return {
       auto_attach = {
         enabled = true,
         filetypes = { "markdown", "python", "lua", "zsh" },
-        keys = {
-          { "<leader>zn", "<Cmd>ZkNew { title = vim.fn.input('Title: ')}<CR>" },
-          { "<leader>zl", "<Cmd>ZkNotes { sort = { 'modified' }}<CR>" },
-          { "<leader>zt", "<Cmd>ZkTags<CR>" },
-          { "<leader>zf", "<Cmd>ZkNotes { sort = {'modified'}, match=vim.fn.input('Search: ')}" },
-        },
       },
     })
   end,
+  keys = {
+    {
+      "<leader>zn",
+      "<Cmd>ZkNew { title = vim.fn.input('Title: ')}<CR>",
+      desc = "Zk: Create NEW note",
+    },
+    {
+      "<leader>zl",
+      "<Cmd>ZkNotes { sort = { 'modified' }}<CR>",
+      desc = "Zk: List all notes",
+    },
+    { "<leader>zt", "<Cmd>ZkTags<CR>", desc = "Zk: Open tags" },
+    {
+      "<leader>zf",
+      "<Cmd>ZkNotes { sort = {'modified'}, match=vim.fn.input('Search: ')}<CR>",
+      desc = "Zk: Search notes",
+    },
+  },
 }
