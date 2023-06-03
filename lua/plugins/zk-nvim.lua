@@ -13,9 +13,14 @@ return {
   end,
   keys = {
     {
-      "<leader>zn",
+      "<leader>znm",
       "<Cmd>ZkNew { title = vim.fn.input('Title: ')}<CR>",
-      desc = "Zk: Create NEW note",
+      desc = "Zk: Create NEW 'markdown' note",
+    },
+    {
+      "<leader>znp",
+      "<Cmd>ZkNew {dir='journal/python'}<CR>",
+      desc = "Zk: Create NEW 'Python' file",
     },
     {
       "<leader>zl",
@@ -25,7 +30,7 @@ return {
     { "<leader>zt", "<Cmd>ZkTags<CR>", desc = "Zk: Open tags" },
     {
       "<leader>zf",
-      "<Cmd>ZkNotes { sort = {'modified'}, match=vim.fn.input('Search: ')}<CR>",
+      "<Cmd>ZkNotes { sort = {'modified'}, match={vim.fn.input('Search: ')} }<CR>",
       desc = "Zk: Search notes",
     },
   },
