@@ -8,3 +8,5 @@ vim.keymap.set({ "n", "v", "i" }, ",x", "<ESC>:x<CR>")
 vim.keymap.set({ "n", "v", "i" }, ",xx", "<ESC>:xa<CR>")
 vim.keymap.set({ "n", "v", "i" }, ",q", "<ESC>:q<CR>")
 vim.keymap.set({ "n", "v", "i" }, ",qq", "<ESC>:qa<CR>")
+-- switch to diff project's tmux-session
+vim.keymap.set({ "n", "v", "i" }, "<C-f>", "<ESC>:!tmux-sessionizer<CR>", { noremap = true, desc = "tmux-sessionizer" })
