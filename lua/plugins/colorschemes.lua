@@ -2,7 +2,7 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      -- the themes comes in 3 styles `storm`, `moom` & a darker variant `day` and `night`
+      -- the themes comes in 3 styles `storm`, `moon` & a darker variant `day` and `night`
       style = "storm",
       on_highlights = function(hl, c)
         hl.CursorLineNr = { fg = c.orange, bold = true }
