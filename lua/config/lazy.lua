@@ -44,4 +44,11 @@ require("lazy").setup({
       },
     },
   },
+  ui = {
+    -- a number <1 is a percentage, >1 is a fixed size
+    size = { width = 0.6, height = 0.8 },
+    border = "rounded",
+    title = " Plugin Manager ", ---@type string only works when border is not "none"
+    title_pos = "center", ---@type "center" | "left" | "right" -- title = "Plugin Manager"
+  },
 })
