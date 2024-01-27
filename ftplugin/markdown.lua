@@ -1,3 +1,6 @@
+-- textwidth for markdown files
+vim.opt.textwidth = 60
+
 -- Add the key mappings only for Markdown files IN A ZK NOTEBOOK.
 if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
   local function map(...)
@@ -11,7 +14,7 @@ if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
   -- Create a new note after asking for its title.
   -- This overrides the global `<leader>zn` mapping
   -- to create the note in the same directory as the current buffer.
-  map("n", "<leader>zn", "<Cmd>ZkNew { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>", opts)
+  map("n", "<leader>zn", "<Cmd>ZkNew { dir = vim.fn.expand('%:p:h') }", opts)
 
   -- Create a new note in the same directory as the
   -- current buffer, using the current selection for title.
