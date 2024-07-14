@@ -9,7 +9,7 @@ local kmap = function(lhs, rhs, description)
 end
 
 kmap("<leader>e", "<ESC>")
-kmap("fj", "<ESC>")
+-- kmap("fj", "<ESC>")
 kmap("<leader>w", "<ESC>:w<RETURN>", "Save")
 kmap("<leader>xx", "<ESC>:xa<RETURN>", "Save all & Exit")
 kmap("<leader>q", "<ESC>:q<RETURN>", "Quit Window")

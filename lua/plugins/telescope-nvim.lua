@@ -6,12 +6,12 @@ return {
 
       winblend = 0,
 
-      layout_strategy = "horizontal",
+      layout_strategy = "vertical",
       layout_config = {
         width = 0.95,
         height = 0.85,
         -- preview_cutoff = 120,
-        prompt_position = "top",
+        prompt_position = "bottom",
 
         horizontal = {
           preview_width = function(_, cols, _)
